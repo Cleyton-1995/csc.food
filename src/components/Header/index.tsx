@@ -14,7 +14,7 @@ export function Header() {
         <Text className="text-center text-sm text-slate-800">Localização</Text>
 
         <View className="flex-row items-center justify-center gap-1">
-          <Feather name="map-pin" size={20} color="#FF0000" />
+          <Feather name="map-pin" size={14} color="#FF0000" />
 
           <Text className="text-lg font-bold">Assunção do Piauí</Text>
         </View>

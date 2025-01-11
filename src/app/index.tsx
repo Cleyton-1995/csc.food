@@ -7,6 +7,8 @@ import Banner from "../components/Banner";
 import Search from "../components/Search";
 import Section from "../components/Section";
 import TrendingFoods from "../components/Trending";
+import Restaurants from "../components/Restaurants";
+import RestaurantsList from "../components/RestaurantsList";
 
 export default function Index() {
   return (
@@ -17,8 +19,9 @@ export default function Index() {
         translucent
       />
       <ScrollView
-        className="bg-slate-200 px-0.5 flex-1"
+        className="bg-slate-200"
         showsVerticalScrollIndicator={false}
+        style={{flex: 1}}
       >
         <View
           className="w-full px-4"
@@ -38,6 +41,22 @@ export default function Index() {
           />
 
           <TrendingFoods/>
+
+          <Section
+            title="Famosos do CSC.Food"
+            label="Veja todos"
+            size="text-xl"
+            action={() => console.log("CLICOU NO Famosos")}
+          />
+          <Restaurants/>
+          
+          <Section
+            title="Restaurantes"
+            label="Veja todos"
+            size="text-xl"
+            action={() => console.log("CLICOU NO RESTAURANTE")}
+          />
+          <RestaurantsList/>
         </View>
       </ScrollView>
     </>
