@@ -2,7 +2,7 @@ import { View, Text, FlatList } from "react-native";
 import React, { useEffect, useState } from "react";
 import FoodItem from "./FoodItem";
 
-interface FoodProps {
+export interface FoodProps {
   id: string;
   name: string;
   price: number;
@@ -30,7 +30,9 @@ export default function TrendingFoods() {
     <FlatList
       horizontal={true}
       data={foods}
-      renderItem={({ item }) => <FoodItem />}
+      renderItem={({ item }) => <FoodItem food={item} />}
+      contentContainerStyle={{gap: 14, marginHorizontal: 4}}
+      showsHorizontalScrollIndicator={false}
     />
   );
 }
