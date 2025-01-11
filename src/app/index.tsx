@@ -6,6 +6,7 @@ import { getStatusBarHeight } from "react-native-iphone-x-helper";
 import Banner from "../components/Banner";
 import Search from "../components/Search";
 import Section from "../components/Section";
+import TrendingFoods from "../components/Trending";
 
 export default function Index() {
   return (
@@ -36,12 +37,7 @@ export default function Index() {
             action={() => console.log("CLICOU NO VEJA MAIS")}
           />
 
-          <Section
-            title="Famosos no CSC.Food"
-            label="Veja todos"
-            size="text-xl"
-            action={() => console.log("CLICOU NO VEJA TODOS")}
-          />
+          <TrendingFoods/>
         </View>
       </ScrollView>
     </>
