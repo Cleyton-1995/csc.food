@@ -1,0 +1,16 @@
+import { View, Text, TextInput } from "react-native";
+import React from "react";
+import { Feather } from "@expo/vector-icons";
+
+export default function Search() {
+  return (
+    <View className="w-full flex-row border border-slate-500 h-14 rounded-full items-center gap-2 px-4">
+      <Feather name="search" size={24} color="#64748B" />
+
+      <TextInput
+        placeholder="Procure sua comida..."
+        className="w-full h-full flex-1 bg-transparent"
+      />
+    </View>
+  );
+}

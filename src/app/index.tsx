@@ -4,6 +4,7 @@ import { Header } from "../components/Header";
 
 import { getStatusBarHeight } from "react-native-iphone-x-helper";
 import Banner from "../components/Banner";
+import Search from "../components/Search";
 
 export default function Index() {
   return (
@@ -24,6 +25,8 @@ export default function Index() {
           <Header />
 
           <Banner />
+
+          <Search />
         </View>
       </ScrollView>
     </>
