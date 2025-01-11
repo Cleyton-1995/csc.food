@@ -1,7 +1,7 @@
-import React from "react";
-import { View } from "react-native";
-import Index from ".";
+import { Slot } from "expo-router";
 
-export default function Layout() {
-  return <Index />;
+import "../styles/global.css";
+
+export default function RootLayout() {
+  return <Slot />;
 }
