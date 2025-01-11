@@ -3,6 +3,7 @@ import React from "react";
 import { Header } from "../components/Header";
 
 import { getStatusBarHeight } from "react-native-iphone-x-helper";
+import Banner from "../components/Banner";
 
 export default function Index() {
   return (
@@ -21,6 +22,8 @@ export default function Index() {
           style={{ marginTop: getStatusBarHeight() + 17 }}
         >
           <Header />
+
+          <Banner />
         </View>
       </ScrollView>
     </>
