@@ -13,8 +13,7 @@ export default function Index() {
         translucent
       />
       <ScrollView
-        className="bg-slate-200 px-0.5"
-        style={{ flex: 1 }}
+        className="bg-slate-200 px-0.5 flex-1"
         showsVerticalScrollIndicator={false}
       >
         <View
